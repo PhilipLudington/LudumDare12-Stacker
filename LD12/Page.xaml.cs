@@ -50,9 +50,8 @@ namespace LD12
             lastUpdateTime = DateTime.Now;
         }
 
-        private void BuildNextLevel()
+        private void Restart()
         {
-            Level.Text = string.Format("Level {0}", ++level);
             foreach (IGameObject iGameObject in GameObjects)
             {
                 iGameObject.UIElement.Visibility = Visibility.Collapsed;
@@ -60,6 +59,22 @@ namespace LD12
                 iGameObject.Delete();
             }
             GameObjects.Clear();
+
+            floorRectangle = new Rectangle(physicsSimulator);
+            floorRectangle.Body.IsStatic = true;
+            floorRectangle.Width = 375;
+            floorRectangle.Height = 74;
+            floorRectangle.X = 190.0f;
+            floorRectangle.Y = 266.0f;
+            floorRectangle.Body.Mass = 100000;
+            TheCanvas.Children.Add(floorRectangle);
+            GameObjects.Add(floorRectangle);
+        }
+        private void BuildNextLevel()
+        {
+            Restart();
+
+            Level.Text = string.Format("Level {0}", ++level);
 
             double newWinPosition = 175.0f;
             if (winLine != null)
@@ -73,16 +88,6 @@ namespace LD12
             {
                 physicsSimulator.Gravity = new Vector2(0, 250);
             }
-
-            floorRectangle = new Rectangle(physicsSimulator);
-            floorRectangle.Body.IsStatic = true;
-            floorRectangle.Width = 375;
-            floorRectangle.Height = 74;
-            floorRectangle.X = 190.0f;
-            floorRectangle.Y = 266.0f;
-            floorRectangle.Body.Mass = 100000;
-            TheCanvas.Children.Add(floorRectangle);
-            GameObjects.Add(floorRectangle);
         }
 
         private void MainStoryboard_Completed(object sender, EventArgs e)
@@ -177,6 +182,15 @@ namespace LD12
             {
                 winCountDown = false;
             }
+            if (winCountDown == false
+                && running == true
+                && GameObjects.Count > 85 )
+            {
+                Play.Content = "Try Again";
+                Play.Visibility = Visibility.Visible;
+                textBlockCount.Text = "Too many bricks!";
+                running = false;
+            }
 
             if (running == true)
             {
@@ -190,7 +204,14 @@ namespace LD12
             {
                 Play.Content = "";
                 Play.Visibility = Visibility.Collapsed;
-                BuildNextLevel();
+                if (GameObjects.Count > 85)
+                {
+                    Restart();
+                }
+                else
+                {
+                    BuildNextLevel();
+                }
                 winCountDown = false;
                 running = true;
                 lastUpdateTime = DateTime.Now;

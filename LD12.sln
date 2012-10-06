@@ -28,7 +28,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite2", "..\..\WebSites\
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "3425"
 		DefaultWebSiteLanguage = "Visual C#"
-		ProjOutputReferences = "{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}|stacker/ClientBin|false;"
+		ProjOutputReferences = "{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}|stacker/ClientBin|false;{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}|ClientBin|false;"
 	EndProjectSection
 EndProject
 Global

@@ -9,14 +9,14 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LD12</RootNamespace>
-    <AssemblyName>LD12</AssemblyName>
+    <AssemblyName>Stacker_1.1</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <SilverlightApplication>true</SilverlightApplication>
     <SupportedCultures>
     </SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>LD12.xap</XapFilename>
+    <XapFilename>Stacker_1.1.xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <SilverlightAppEntry>LD12.App</SilverlightAppEntry>
     <TestPageFileName>TestPage.html</TestPageFileName>
