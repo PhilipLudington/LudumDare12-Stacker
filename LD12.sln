@@ -1,35 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LD12", "LD12\LD12.csproj", "{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarseerPhysics", "..\Farseer_1.0.0.6\FarseerPhysics\FarseerPhysics.csproj", "{1D0B97EA-FE4A-498E-A21B-D0D476464925}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarseerSilverlightDemos", "..\Farseer_1.0.0.6\FarseerSilverlightDemos\FarseerSilverlightDemos.csproj", "{CD4FB549-7AB3-453C-97AC-8CB23AAB7482}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transforms", "..\Transforms\Transforms\Transforms.csproj", "{E754F4C7-D15B-482B-8F4E-F12FEBAAB6DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stacker", "Stacker\Stacker.csproj", "{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite2", "..\..\WebSites\WebSite2\", "{6E5E504A-94AA-4333-A42E-0A3ED1E1B147}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFramework = "3.5"
-		Debug.AspNetCompiler.VirtualPath = "/WebSite2"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\WebSite2\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebSite2\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/WebSite2"
-		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\WebSite2\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WebSite2\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "3425"
-		DefaultWebSiteLanguage = "Visual C#"
-		ProjOutputReferences = "{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}|stacker/ClientBin|false;{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}|ClientBin|false;"
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transforms", "Transforms\Transforms.csproj", "{E754F4C7-D15B-482B-8F4E-F12FEBAAB6DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,16 +19,6 @@ Global
 		Release|Mixed Platforms = Release|Mixed Platforms
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Debug|.NET.ActiveCfg = Debug|Any CPU
-		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Release|.NET.ActiveCfg = Release|Any CPU
-		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{1D0B97EA-FE4A-498E-A21B-D0D476464925}.Debug|.NET.ActiveCfg = Debug|Any CPU
 		{1D0B97EA-FE4A-498E-A21B-D0D476464925}.Debug|Any CPU.ActiveCfg = Release|Any CPU
 		{1D0B97EA-FE4A-498E-A21B-D0D476464925}.Debug|Any CPU.Build.0 = Release|Any CPU
@@ -71,6 +39,16 @@ Global
 		{CD4FB549-7AB3-453C-97AC-8CB23AAB7482}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CD4FB549-7AB3-453C-97AC-8CB23AAB7482}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{CD4FB549-7AB3-453C-97AC-8CB23AAB7482}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Release|.NET.ActiveCfg = Release|Any CPU
+		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D09FEFF1-4620-4C82-AAE4-0C516EB3C51C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{E754F4C7-D15B-482B-8F4E-F12FEBAAB6DF}.Debug|.NET.ActiveCfg = Debug|Any CPU
 		{E754F4C7-D15B-482B-8F4E-F12FEBAAB6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E754F4C7-D15B-482B-8F4E-F12FEBAAB6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
@@ -81,16 +59,6 @@ Global
 		{E754F4C7-D15B-482B-8F4E-F12FEBAAB6DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E754F4C7-D15B-482B-8F4E-F12FEBAAB6DF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{E754F4C7-D15B-482B-8F4E-F12FEBAAB6DF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{6E5E504A-94AA-4333-A42E-0A3ED1E1B147}.Debug|.NET.ActiveCfg = Debug|.NET
-		{6E5E504A-94AA-4333-A42E-0A3ED1E1B147}.Debug|.NET.Build.0 = Debug|.NET
-		{6E5E504A-94AA-4333-A42E-0A3ED1E1B147}.Debug|Any CPU.ActiveCfg = Debug|.NET
-		{6E5E504A-94AA-4333-A42E-0A3ED1E1B147}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
-		{6E5E504A-94AA-4333-A42E-0A3ED1E1B147}.Debug|Mixed Platforms.Build.0 = Debug|.NET
-		{6E5E504A-94AA-4333-A42E-0A3ED1E1B147}.Release|.NET.ActiveCfg = Debug|.NET
-		{6E5E504A-94AA-4333-A42E-0A3ED1E1B147}.Release|.NET.Build.0 = Debug|.NET
-		{6E5E504A-94AA-4333-A42E-0A3ED1E1B147}.Release|Any CPU.ActiveCfg = Debug|.NET
-		{6E5E504A-94AA-4333-A42E-0A3ED1E1B147}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
-		{6E5E504A-94AA-4333-A42E-0A3ED1E1B147}.Release|Mixed Platforms.Build.0 = Debug|.NET
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

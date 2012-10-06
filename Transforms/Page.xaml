@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Transforms.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Canvas x:Name="LayoutRoot" Background="White">
+        <Rectangle x:Name="Blue" Width="375" Height="74" Canvas.Left="13" Canvas.Top="0" Fill="Blue" Stroke="#FF000000">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <TranslateTransform x:Name="translateTransform" X="0" Y="50"></TranslateTransform>
+                    <RotateTransform Angle="1"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Button Content="Transform" Click="Button_Click" Canvas.Top="130" Canvas.Left="155"></Button>
+        <TextBlock x:Name="TextBlockY" Text="0" Canvas.Top="160" Canvas.Left="155" />
+        <Rectangle x:Name="Red" Width="375" Height="74"  Canvas.Left="13" Canvas.Top="226" Fill="Red" Stroke="#FF000000"/>
+    </Canvas>
+</UserControl>

@@ -16,15 +16,12 @@
         <TextBlock Height="111" Width="384" Canvas.Left="8" Canvas.Top="314" TextWrapping="Wrap" FontSize="12" FontFamily="Times New Roman">
         	<Run Text="Click the mouse to add a block."/>
         	<LineBreak/>
-        	<Run Text="Stacker "/>
+        	<LineBreak/>
+        	<Run Text="Created for Ludum Dare #12  "/>
         	<LineBreak/>
         	<Run Text="by MrPhil (Philip J. Ludington) "/>
         	<LineBreak/>
-        	<Run Text="Ludum Dare #12  "/>
-        	<LineBreak/>
-        	<Run Text="Version 1.1 - Final"/>
-        	<LineBreak/>
-        	<Run Text="http://www.MrPhilGames.com/"/>
+        	<Run Text="Version 1.2"/>
         </TextBlock>
         <Path Height="305.269" Width="1" Fill="#FFFDFF00" Stretch="Fill" Stroke="#FFFF0000" Data="M110,14 L110,126" StrokeThickness="3"/>
         <Path Height="305.269" Width="1" Fill="#FFFF0000" Stretch="Fill" Stroke="#FFFF0000" StrokeThickness="3" Data="M110,14 L110,126" Canvas.Left="400"/>
